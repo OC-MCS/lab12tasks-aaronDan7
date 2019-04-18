@@ -6,7 +6,21 @@ using namespace std;
 
 bool isBalanced(string s)
 {
-	// replace the body of this function 
+	if (s.empty())
+		return false;
+
+	int i = 0;                // first characters
+	int j = s.length() - 1; // last character
+
+	while (i < j)
+	{
+		if (s[i] != s[j])
+		{
+			return false;
+		}
+		i++;
+		j--;
+	}
 	return true;
 }
 
