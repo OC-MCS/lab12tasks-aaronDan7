@@ -36,5 +36,4 @@ int main()
 		else
 			cout << s << " is not balanced. " << endl;
 	}
-
 }
